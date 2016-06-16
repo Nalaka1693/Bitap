@@ -140,7 +140,7 @@ exitmain:
 @===================================string length function
 strleng:
 	sub 	sp, sp, #4				@ stack allocate to link reg
-	str 	lr, [sp, #0]			@ storing likn reg value in stack
+	str 	lr, [sp, #0]			@ storing link reg value in stack
 
 	mov r1, #0
 	
