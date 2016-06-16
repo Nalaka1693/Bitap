@@ -2,7 +2,7 @@
 	.global main
 main:
 @===================================main
-	sub sp, sp, #4
+	sub sp, sp, #4					@ stack allocate to link reg
 	str lr, [sp, #0]
 
 @-----------------------------------pattern[i]
@@ -139,8 +139,8 @@ exitmain:
 
 @===================================string length function
 strleng:
-	sub 	sp, sp, #4
-	str 	lr, [sp, #0]
+	sub 	sp, sp, #4				@ stack allocate to link reg
+	str 	lr, [sp, #0]			@ storing likn reg value in stack
 
 	mov r1, #0
 	
